@@ -6,19 +6,25 @@
     <h2 class="text-center mb-4">Explore more like this</h2>
     {% endunless %}
     
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-wrap justify-content-center align-items-center">
     
     <!-- Categories -->
     {% assign sortedCategories = page.categories | sort %}
-    {% for category in sortedCategories %}
-    <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>                
+    {% for category in sortedCategories limit:3 %}
+    <a class="smoothscroll badge badge-primary text-capitalize m-1" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>                
     {% endfor %}
+    {% if page.categories.size > 3 %}
+    <span class="badge badge-light m-1">+{{ page.categories.size | minus: 3 }} more</span>
+    {% endif %}
 
     <!-- Tags -->  
     {% assign sortedTags = page.tags | sort %}
-    {% for tag in sortedTags %}                
-    <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>               
+    {% for tag in sortedTags limit:4 %}                
+    <a class="smoothscroll badge badge-primary text-capitalize m-1" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>               
     {% endfor %}
+    {% if page.tags.size > 4 %}
+    <span class="badge badge-light m-1">+{{ page.tags.size | minus: 4 }} more</span>
+    {% endif %}
 
     </div>
 

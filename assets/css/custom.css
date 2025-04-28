@@ -246,3 +246,39 @@ h3 {
         height: 240px !important;
     }
 }
+
+/* Related posts badges */
+.related-posts .badge {
+    margin: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.related-posts .badge-primary {
+    background-color: #17a2b8;
+    transition: all 0.2s ease;
+}
+
+.related-posts .badge-primary:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+.related-posts .badge-light {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.related-posts h2 {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.related-posts .d-flex {
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+}
