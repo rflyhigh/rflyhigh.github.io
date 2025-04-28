@@ -5,7 +5,7 @@ author: flyhigh
 categories: [AIML, "First Semester"]
 tags: ["manual answers", "k scheme", practical]
 image: assets/images/aiml-manuals.jpg
-featured: true
+featured: false
 ---
 
 # AIML First Semester Manuals
@@ -21,14 +21,14 @@ Complete solutions for all Chemistry practical experiments including:
 - Viscosity and Emulsification tests
 - And more...
 
-### 311301 English Manual Answer
-*Coming soon...*
+### [311301 English Manual Answer](/2025-04-28-311303 -communication-skills-english-manual-answer)
+Complete solutions for all English practicals
 
 ### 311302 Basic Mathematics Manual Answer
 *Coming soon...*
 
-### 311303 Basic Physics Manual Answer
-*Coming soon...*
+### [311303 Basic Physics Manual Answer](2025-04-28-311305-basic-science-physics-manual-answer)
+Complete solutions for all Physics practical
 
 ### 311304 Engineering Graphics Manual Answer
 *Coming soon...*

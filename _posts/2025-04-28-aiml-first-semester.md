@@ -5,7 +5,7 @@ author: flyhigh
 categories: [AIML]
 tags: ["first semester", syllabus, "manual answers", "guessing papers"]
 image: assets/images/aiml-first-sem.jpg
-featured: true
+featured: false
 ---
 
 # AIML First Semester Resources
