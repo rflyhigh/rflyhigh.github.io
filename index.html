@@ -19,15 +19,14 @@ title: Home
                         </a>
                         <div class="card-body">
                             <h2 class="card-title"><a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-                            <p class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+                            <p class="card-text">{{ post.excerpt | strip_html | truncatewords:20 }}</p>
                             <div class="metafooter">
-                                <div class="wrapfooter">
-                                    <span class="meta-footer-thumb">
-                                        <img class="author-thumb" src="{{ site.baseurl }}/{{ site.authors[post.author].avatar }}" alt="{{ site.authors[post.author].display_name }}">
-                                    </span>
-                                    <span class="author-meta">
-                                        <span class="post-name">{{ site.authors[post.author].display_name }}</span><br/>
-                                        <span class="post-date">{{ post.date | date_to_string }}</span>
+                                <div class="wrapfooter small">
+                                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                                    <span class="post-categories">
+                                        {% for category in post.categories limit:1 %}
+                                        <a class="badge badge-primary" href="{{ site.baseurl }}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
+                                        {% endfor %}
                                     </span>
                                 </div>
                             </div>
