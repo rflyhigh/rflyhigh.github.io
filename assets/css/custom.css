@@ -1,0 +1,195 @@
+/* Custom styles for MSBTEMadeEasy */
+
+/* Featured posts styling */
+.featured-posts {
+    margin-bottom: 30px;
+}
+
+.featured-posts .card {
+    border-left: 4px solid #17a2b8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.featured-posts .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.section-title h2 span {
+    background-color: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    z-index: 0;
+}
+
+/* Iframe responsiveness */
+iframe {
+    max-width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Subject cards */
+.subject-card {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.subject-card:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.subject-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Program navigation */
+.program-nav {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.program-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.program-nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.program-nav a {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    color: #495057;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.program-nav a:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Practical list styling */
+.practical-list {
+    counter-reset: practical-counter;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.practical-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+}
+
+.practical-list li:before {
+    content: counter(practical-counter);
+    counter-increment: practical-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #17a2b8;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/* Heading enhancements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Download button */
+.download-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+    text-decoration: none;
+    color: white;
+}
+
+.download-btn i {
+    margin-right: 5px;
+}
