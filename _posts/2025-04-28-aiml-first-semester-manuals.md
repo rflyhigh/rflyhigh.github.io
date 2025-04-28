@@ -27,7 +27,7 @@ Complete solutions for all English practicals
 ### 311302 Basic Mathematics Manual Answer
 *Coming soon...*
 
-### [311303 Basic Physics Manual Answer](2025-04-28-311305-basic-science-physics-manual-answer)
+### [311303 Basic Physics Manual Answer](/2025-04-28-311305-basic-science-physics-manual-answer)
 Complete solutions for all Physics practical
 
 ### 311304 Engineering Graphics Manual Answer
